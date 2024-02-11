@@ -318,6 +318,11 @@ input {
 	border-radius: 50%;
 }
 
+.footerLogo {
+	width: 200px;
+	filter: brightness(1.4);
+}
+
 @media screen and (min-width: 3840px) {
 	.card {
 		width: 35% !important;
@@ -367,5 +372,9 @@ input {
 
 	.vac {
 		flex-direction: column !important;
+	}
+	.footerLogo {
+		width: 100px;
+		filter: brightness(1.4);
 	}
 }
