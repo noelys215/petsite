@@ -293,8 +293,9 @@ input {
 	justify-content: space-between;
 }
 .cat-box img {
-	width: 50%;
-	height: 50%;
+	width: 25rem;
+	height: 25rem;
+	object-fit: cover;
 	border-radius: 50%;
 }
 
@@ -359,5 +360,12 @@ input {
 	}
 	.cat-box img {
 		width: auto;
+		height: auto;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.vac {
+		flex-direction: column !important;
 	}
 }

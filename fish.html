@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fish - Paradigm Pet Professionals</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="content-wrap">
+			<header class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="/images/logo.png" alt="Paradigm Pet Professionals Logo" />
+					</a>
+				</div>
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a class="cats-index" href="cats.html">Cats</a>
+					<a href="dogs.html">Dogs</a>
+					<a href="fish.html">Fish</a>
+				</div>
+
+				<div class="search-bar">
+					<div class="nav-links">
+						<a href="faqs.html">FAQs</a>
+					</div>
+					<input type="search" placeholder="Search..." />
+				</div>
+				<div class="hamburger" onclick="toggleModal(true)">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<a href="index.html" onclick="toggleModal(false)">Home</a>
+						<a href="cats.html" onclick="toggleModal(false)">Cats</a>
+						<a href="dogs.html" onclick="toggleModal(false)">Dogs</a>
+						<a href="fish.html" onclick="toggleModal(false)">Fish</a>
+						<a href="faqs.html" onclick="toggleModal(false)">FAQs</a>
+						<a class="close" onclick="toggleModal(false)">&#10539;</a>
+					</div>
+				</div>
+			</header>
+
+			<!-- Hero -->
+			<section class="card hero-section cats">
+				<h1>Fish Care</h1>
+				<img src="/images/heroFIsh.jpg" alt="Orange and Black Fish" />
+				<p>
+					Fish represent a broad class of aquatic animals that can live in fresh or
+					saltwater, depending on the species. Bringing fish into your home can be an
+					exciting hobby, especially if you intend to breed them, and the presence of a
+					fish tank in your home can induce feelings of peace and tranquility. Whether you
+					are bringing your fish home for the first time or maintaining your aquarium, it
+					is important to test your water once per week to ensure it is free from toxins
+					that can harm your fish.
+				</p>
+			</section>
+
+			<!-- Freshwater Fish -->
+			<section class="card about-us">
+				<h2>Freshwater Fish</h2>
+				<div class="dog-box">
+					<div>
+						<p>
+							There are several freshwater fish to choose from when setting up your
+							aquarium, but it is best to consult with a “Pexpert” to ensure your fish
+							will get along! No matter the species, ensure your fish are suited for a
+							freshwater environment by investing in a water testing kit. Follow these
+							general water chemistry guidelines to ensure your fish will adapt well
+							to your aquarium and avoid ingesting toxins that can harm or kill your
+							fish:
+						</p>
+						<ul>
+							<li>pH Level: 6.8–7.6 (7.0 is considered neutral)</li>
+							<li>Ammonia: any level above zero is harmful to fish</li>
+							<li>Nitrates: 5 to 10 ppm</li>
+							<li>Nitrites: less than 0.5 ppm</li>
+						</ul>
+					</div>
+					<img src="/images/goldfish.jpg" alt="Goldfish" />
+				</div>
+			</section>
+			<!-- Saltwater Fish -->
+			<section class="card about-us">
+				<h2>Saltwater Fish</h2>
+				<div class="dog-box">
+					<div>
+						<p>
+							Saltwater fish also offer several options when it comes to choosing
+							among species for your aquarium. As with freshwater fish, consult with a
+							“Pexpert” to ensure your fish will get along are suited for a saltwater
+							environment. Following these general guidelines to avoid dangerous water
+							conditions and ensure the appropriate salinity level for your fishies:
+						</p>
+						<ul>
+							<li>Salinity: 1.020–1.028 sg</li>
+							<li>pH Level: 7.6–8.4 (7.0 is considered neutral)</li>
+							<li>Ammonia: any level above 0.1 ppm requires attention</li>
+							<li>Nitrates: 10 to 40 ppm</li>
+							<li>Nitrites: less than 0.2 ppm</li>
+						</ul>
+						<p>
+							For more information on making your tap water safe for your fish, please
+							visit:<br />
+							<a
+								href="http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish"
+								target="_blank"
+								>How to make tap water safe for fish</a
+							>
+							<br />
+							<a href="http://fishbase.org/home.htm" target="_blank">FishBase</a>
+						</p>
+					</div>
+					<img src="/images/clownfish.jpg" alt="Clown Fish" />
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<p>Paradigm Pet Professionals&copy;</p>
+			<div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+				Back to Top&#x21E7;
+			</div>
+		</footer>
+		<script>
+			function toggleModal(show) {
+				var modal = document.getElementById('myModal');
+				modal.style.display = show ? 'block' : 'none';
+			}
+
+			document
+				.getElementById('consultation-form')
+				.addEventListener('submit', function (event) {
+					event.preventDefault();
+					alert('Form submitted successfully!');
+					this.reset();
+				});
+		</script>
+	</body>
+</html>
