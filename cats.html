@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cats - Paradigm Pet Professionals</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="content-wrap">
+			<header class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="/images/logo.png" alt="Paradigm Pet Professionals Logo" />
+					</a>
+				</div>
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<a class="cats-index" href="cats.html">Cats</a>
+					<a href="dogs.html">Dogs</a>
+					<a href="fish.html">Fish</a>
+				</div>
+
+				<div class="search-bar">
+					<div class="nav-links">
+						<a href="faqs.html">FAQs</a>
+					</div>
+					<input type="search" placeholder="Search..." />
+				</div>
+				<div class="hamburger" onclick="toggleModal(true)">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<a href="index.html" onclick="toggleModal(false)">Home</a>
+						<a href="cats.html" onclick="toggleModal(false)">Cats</a>
+						<a href="dogs.html" onclick="toggleModal(false)">Dogs</a>
+						<a href="fish.html" onclick="toggleModal(false)">Fish</a>
+						<a href="faqs.html" onclick="toggleModal(false)">FAQs</a>
+						<a class="close" onclick="toggleModal(false)">&#10539;</a>
+					</div>
+				</div>
+			</header>
+
+			<!-- Hero -->
+			<section class="card hero-section cats">
+				<h1>Cat Care</h1>
+				<img src="/images/peepingCat.jpg" alt="Peeping Cat" />
+				<p>
+					Cats were first domesticated around 7500 BCE in the western Asia region and are
+					currently the second most popular domestic pet in the United States. While there
+					are over 60 unique documented cat breeds, care and diet can differ between
+					breeds. However, some diets and practices are generally recommended for the
+					well-being of your fluffy family member regardless of breed.
+				</p>
+			</section>
+
+			<!-- Zero to Four Weeks -->
+			<section class="card about-us">
+				<h2>Zero to Four Weeks</h2>
+				<div class="cat-box">
+					<div>
+						<p>
+							It is important the queen (a term commonly used for a female cat that is
+							either pregnant or nursing) directly nurse her young if possible.
+							Monitor your kitten’s growth closely to make sure its growth rate is
+							progressing steadily. If any kitten is not growing at a sufficient rate,
+							a caretaker might need to feed the kitten directly either with a bottle
+							or a feeding tube. Some reasons why kittens might not gain weight
+							appropriately include the following:
+						</p>
+						<ul>
+							<li>Too many other siblings are competing for mom's milk</li>
+							<li>Gastrointestinal disease</li>
+							<li>
+								Environmental conditions such as extreme heat or cold, or unsanitary
+								conditions
+							</li>
+						</ul>
+					</div>
+					<img src="/images/kitten.jpg" alt="Kitten" />
+				</div>
+			</section>
+			<!-- Four Weeks to One Year -->
+			<section class="card about-us">
+				<h2>Four Weeks to One Year</h2>
+				<div class="cat-box">
+					<img src="/images/fourWeekCat.jpg" alt="Cat looking out window" />
+					<div>
+						<p>
+							Kittens can start being introduced to soft wet kitten food typically
+							around three to four weeks after birth. According to the
+							<a
+								href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips"
+								target="_blank"
+								>ASPCA</a
+							>, kittens at this age should eat half to one cup of dry kitten food or
+							six to nine ounces of wet kitten food per day. If your kitten has
+							difficulties eating hard food, a small amount of water can be added to
+							soften the food. Cat food that is optimized for kittens provides the
+							additional nutrients that are needed for growth, energy, and wellness.
+							Depending on the breed, your cat may have different dietary
+							requirements. You should always consult with your veterinarian for
+							recommendations.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- One Year to Seven Years -->
+			<section class="card about-us">
+				<h2>One Year to Seven Years</h2>
+				<div class="cat-box">
+					<div>
+						<p>
+							This age is when kittens reach the cat stage and do not need as many
+							nutrients. At this age, their level of activity decreases, and so does
+							their metabolism. It is not recommended to leave food out for the cats
+							all day. Instead, provide food a couple times a day so they eat meals
+							rather than snacking throughout the day. This practice reduces the risk
+							of obesity and other weight-related feline ailments.
+						</p>
+					</div>
+					<img src="/images/yearOldCat.jpg" alt="Cat looking up" />
+				</div>
+			</section>
+			<!-- Seven Years and More -->
+			<section class="card about-us">
+				<h2>Seven Years and More</h2>
+				<div class="cat-box">
+					<img src="/images/sevenYearsCat.jpg" alt="Cat laying on grass" />
+					<div>
+						<p>
+							This age is when kittens reach the cat stage and do not need as many
+							nutrients. At this age, their level of activity decreases, and so does
+							their metabolism. It is not recommended to leave food out for the cats
+							all day. Instead, provide food a couple times a day so they eat meals
+							rather than snacking throughout the day. This practice reduces the risk
+							of obesity and other weight-related feline ailments.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<p>Paradigm Pet Professionals&copy;</p>
+			<div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+				Back to Top&#x21E7;
+			</div>
+		</footer>
+		<script>
+			function toggleModal(show) {
+				var modal = document.getElementById('myModal');
+				modal.style.display = show ? 'block' : 'none';
+			}
+
+			document
+				.getElementById('consultation-form')
+				.addEventListener('submit', function (event) {
+					event.preventDefault();
+					alert('Form submitted successfully!');
+					this.reset();
+				});
+		</script>
+	</body>
+</html>
