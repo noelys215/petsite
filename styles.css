@@ -71,6 +71,10 @@ ul {
 	color: #fff;
 	font-size: 130%;
 }
+
+.nav-links a.active {
+	color: white; /* or any color you want for the active state */
+}
 .search-bar {
 	display: flex;
 	align-items: center;
